@@ -1,3 +1,5 @@
+import React from 'react'
+
 function TextContent() {
     return (
         <div className="text-contents">

@@ -1,3 +1,6 @@
+import react from "react";
+import nav from './nav.scss'
+
 function Nav() {
     return (
         <nav>

@@ -1,4 +1,14 @@
+import React from 'react';
+import login from './login.scss'
+import {useNavigate, Link} from 'react-router-dom'
+
+
 function Login(props) {
+  const navigate = useNavigate();
+  const goToMain = () => {
+    navigate("/main");
+  }
+
   return (
     <div className="login-box">
         <p className="logo">westagram</p>
@@ -13,9 +23,9 @@ function Login(props) {
                 placeholder="비밀번호"
                 // value={props.pw}
                 />
-            <button onClick={""}>로그인</button>
+            <button onClick={goToMain}>로그인</button>
         </div>
-        <a className="info" href="">비밀번호를 잊으셨나요?</a>
+        <Link to="" className="info">비밀번호를 잊으셨나요?</Link>
     </div>
   );
 }

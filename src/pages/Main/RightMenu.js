@@ -1,3 +1,6 @@
+import React from "react";
+import rightmenu from './rightmenu.scss'
+
 function RightMenu () {
     return (
         <div className="main-right">
